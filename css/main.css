@@ -98,7 +98,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+
    /* -----------------Base Header - Footer Styles -----------------------*/
+
+header {
+  padding: 15px 0;
+}
 
 header, footer {
   display: flex;
@@ -107,6 +116,8 @@ header, footer {
   flex-flow: row wrap;
 }
 
+
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -114,16 +125,41 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
+
 header nav {
   display: flex;
   justify-content: center;
   align-items: space-around;
   flex-flow: row wrap;
+  width: 60%; 
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .content {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -136,6 +172,10 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 /* -------------Mobile Styles Homepage -------------*/
@@ -157,12 +197,22 @@ aside {
   flex-flow: row wrap;
 }
 
+
 /* Features */
+
+.fetures article {
+  width: 63%;
+  margin: 30px 0;
+}
 
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.features h2 {
+  margin-bottom: 60px;
 }
 
 
@@ -173,6 +223,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.features p {
+  margin: 0;
+}
+
 /* Reviews */
 
 .reviews {
@@ -181,7 +235,17 @@ aside {
   flex-flow: row wrap;
 }
 
-/* --------------------About Page -------------------*/
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+/* ==========================================================================================
+ABOUT PAGE
+=============================================================================================*/
 
 .mission {
   display: flex;
@@ -197,7 +261,9 @@ aside {
   flex-flow: row wrap;
 }
 
-/* --------------------FAQ Page --------------------*/
+/* =========================================================================================================
+FAQ PAGE
+============================================================================================================*/
 
 .faq {
   display: flex;
@@ -207,10 +273,19 @@ aside {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 
