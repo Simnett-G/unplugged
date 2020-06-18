@@ -565,6 +565,7 @@ footer .copyright {
   .mission h2,
   .contact-section .content-wrapper {
     width: 95%;
+    flex-flow: row wrap;
   }
 
   .contact-section .content-wrapper h2 {
