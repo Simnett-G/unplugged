@@ -141,11 +141,11 @@ textarea {
    }
 
    img {
-
+    width: 100%;
    }
 
    figure {
-
+    margin: 0;
    }
 
    address {
@@ -174,8 +174,6 @@ header, footer {
   background-color: #202322;
 }
 
-
-
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -183,6 +181,14 @@ header .content-wrapper {
   flex-flow: row wrap;
   margin: 0;
 } 
+
+header figure {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 .header-divider {
   width: 100%;
@@ -203,8 +209,9 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+  margin-left: 0;
 }
 
 header nav ul li {
@@ -249,10 +256,15 @@ footer .copyright {
 
 /* Hero Area */
 
+
 .hero-area {
+  background: url('../img/bridge.jpg') center no-repeat #333;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  min-height: 500px;
 }
 
 .hero-area h2 {
@@ -260,6 +272,7 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500; 
   line-height: 1.2;
+  margin: 0;
 }
 
 /* Aside */
@@ -272,8 +285,8 @@ aside {
   background-color: #527158;
 }
 
-aside .form {
-  margin-top: 30px;
+aside .form h3 {
+  margin: 30px 0 10px;
 }
 
 input[type=text] {
@@ -302,6 +315,8 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/dark-camp.jpg') center no-repeat #333;
+  background-size: cover; 
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -337,14 +352,19 @@ input[type=button] {
   background-color: #2a423a;
 }
 
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews figure {
+  width: 100%;
+}
+
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
 }
 
-.reviews h2 {
-  margin-bottom: 40px;
-}
 /* ==========================================================================================
 ABOUT PAGE
 =============================================================================================*/
@@ -492,7 +512,17 @@ FAQ PAGE
 
 .content-wrapper {
   max-width: 640px;
-  margin: 100px 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
 }
 
 /*Header*/
@@ -507,8 +537,12 @@ header .content-wrapper {
   justify-content: space-between;
 }
 
+header figure {
+  width: 30%;
+}
+
 header nav {
-  width: 20%; 
+  width: 30%; 
 }
 
 header nav ul {
@@ -520,6 +554,18 @@ header nav ul {
 }
 
 /* Hero Area */
+
+.hero-area {
+  min-height: 600px;
+}
+
+.hero-area h2 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 100px 0;
+}
+
+
 
 /* Aside */
 
@@ -533,7 +579,7 @@ aside .content-wrapper{
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
   width: 40%;
-  margin: 0;
+  padding: 0;
 }
 
 /* Features */
@@ -552,13 +598,33 @@ aside .content-wrapper .form {
 
 /* Reviews */
 
+.reviews .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+}
+
+.reviews figure {
+  width: 49%;
+}
+
 .reviews article {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .reviews article div {
   width: 49%;
+}
+
+.reviews article h3 {
+  margin: 0;
+  width: 80%;
+}
+
+.reviews h2 {
+  width: 80%;
 }
 
 /* Footer */
