@@ -374,6 +374,23 @@ ABOUT PAGE
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .contact-section {
@@ -381,6 +398,7 @@ ABOUT PAGE
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -664,6 +682,10 @@ footer .copyright {
 
 /* Tablet About Page */
 
+.mission {
+  background-color: #527158;
+}
+
 .mission-content {
   display: flex;
   justify-content: space-between;
@@ -673,6 +695,11 @@ footer .copyright {
 
 .mission-content p {
   width: 45%;
+}
+
+.contact-section {
+  background-color: #2a423a;
+  padding: 50px 0 100px;
 }
 
 .contact-section .content-wrapper h2 {
