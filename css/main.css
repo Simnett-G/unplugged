@@ -522,7 +522,7 @@ FAQ PAGE
    Modify as content requires.
    ========================================================================== */
 
-/* -------------------------TABLET STYLES--------------------------------------*/
+/* -------------------------------------------TABLET STYLES---------------------------------------------------*/
 
 @media only screen and (min-width: 768px) {        
 
@@ -686,15 +686,23 @@ footer .copyright {
   background-color: #527158;
 }
 
+.mission .content-wrapper {
+  margin: 100px 0 100px;
+}
+
 .mission-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .mission-content p {
   width: 45%;
+}
+
+.map figure {
+  padding-bottom: 50%;
 }
 
 .contact-section {
@@ -761,6 +769,10 @@ footer .copyright {
   .contact-section .content-wrapper {
     width: 95%;
     flex-flow: row wrap;
+  }
+
+  .map figure {
+    padding-bottom: 40%;
   }
 
   .contact-section .content-wrapper h2 {
